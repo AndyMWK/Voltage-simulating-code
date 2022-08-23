@@ -1,17 +1,13 @@
 #include <cassert>
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
 #include <vector>
 #include <cmath>
 #include <ctime>
 
-
 using namespace std;
 
-//make this into an actual uncertainty-calculating program
-/*frist specify the amount of variables measured. 
+/*
+frist specify the amount of variables measured. 
 type it in to the equation function
 store all the entries (need steps) of each variable
 if multiple variables, equation must take into account corresponding values of each of the variables. 
@@ -102,7 +98,6 @@ int main() {
     srand(time(nullptr));
     
     while(x<= limitX) {
-        
 
         val n;
 
