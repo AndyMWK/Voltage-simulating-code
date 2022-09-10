@@ -12,6 +12,8 @@ type it in to the equation function
 store all the entries (need steps) of each variable
 if multiple variables, equation must take into account corresponding values of each of the variables. 
 */
+
+//These constants are the values used for a laboratory assignment. User interface will be developed. 
 const double Vknot = 3.9;
 const double e = 2.7182818;
 const double timeConstant = 0.00019;
@@ -22,13 +24,12 @@ const double limitX = 0.00005;
 
 const double h = 0.00000001;
 
-const double dx = 0.0000000004;//interval*0.005;
+const double dx = 0.0000000004; //interval*0.005;
 
 const int maxRandPrec = 1000;
 
 double generateRand(double value, double uncert) {
-    double min = value - uncert;
-    //double max = value + uncert;
+    double min = value - uncert
     int random = rand()%maxRandPrec;
     
     double rd = random*1.0;
@@ -88,13 +89,8 @@ double uncert(double dx, double x) {
 int main() {
 
     vector <val> list;
-    //vector <double> x_1;
     double x = startX;
-    /*double x1 = x;
-    while (x1 <= limit) {
-        x_1.push_back(x1);
-        x1 = x1 + interval;
-    }*/
+   
     srand(time(nullptr));
     
     while(x<= limitX) {
